@@ -83,7 +83,7 @@ if __name__ == '__main__':
         print("Model loaded successfully.")
     elif flag_trained == "n":
         print("Training a new model...")
-        modelfile = "anomaly_detector_trained.pkl"
+        modelfile = "anomaly_detector.pkl"
         features = ["length_log", "protocol_encoded"]
         scaler = StandardScaler()
         X = scaler.fit_transform(df[features])
